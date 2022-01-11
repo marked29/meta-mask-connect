@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { ethers } from 'ethers';
+
+import { TempleWallet } from "@temple-wallet/dapp";
+
+
 import './App.css';
 
 const WalletCard = () => {
@@ -72,12 +76,11 @@ const WalletCard = () => {
 	);
 }
 
-
-
 function App() {
   return (
     <div className="App">
-      <WalletCard/>
+      <WalletCard />
+      <button onClick={() => { console.log(no); }}>Click here</button>
     </div>
   );
 }
